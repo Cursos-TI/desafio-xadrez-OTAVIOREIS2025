@@ -40,3 +40,15 @@ int main() {
         }
     }
     printf("\n");
+
+    // ============================
+    // MOVIMENTAÇÃO DA TORRE
+    // ============================
+    printf("Movimentacao da Torre (5 casas para a direita):\n");
+    int j = 0;
+    while (j < TORRE_PASSOS && torreY < N - 1) {
+        torreY++; // move para a direita
+        printf("Direita\n");
+        j++;
+    }
+    printf("\n");
