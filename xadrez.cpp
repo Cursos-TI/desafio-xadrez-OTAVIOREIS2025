@@ -26,3 +26,17 @@ int main() {
     int bispoX = 7, bispoY = 0;   // Bispo começa em baixo à esquerda
     int torreX = 0, torreY = 0;   // Torre começa no canto superior esquerdo
     int rainhaX = 3, rainhaY = 7; // Rainha começa no meio da direita
+
+    // ============================
+    // MOVIMENTAÇÃO DO BISPO
+    // ============================
+    printf("Movimentacao do Bispo (5 casas na diagonal superior direita):\n");
+    for (int i = 0; i < BISPO_PASSOS; i++) {
+        if (bispoX > 0 && bispoY < N - 1) { // dentro do tabuleiro
+            bispoX--;  // sobe
+            bispoY++;  // direita
+            printf("Cima\n");
+            printf("Direita\n");
+        }
+    }
+    printf("\n");
