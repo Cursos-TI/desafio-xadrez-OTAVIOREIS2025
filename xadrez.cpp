@@ -67,3 +67,10 @@ int main() {
     } while (k < RAINHA_PASSOS && rainhaY > 0);
 
     printf("\n");
+
+    // ============================
+    // MARCAR POSIÇÕES FINAIS NO TABULEIRO
+    // ============================
+    tabuleiro[bispoX][bispoY] = 'B';
+    tabuleiro[torreX][torreY] = 'T';
+    tabuleiro[rainhaX][rainhaY] = 'Q';
