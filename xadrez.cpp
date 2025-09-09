@@ -19,3 +19,10 @@ int main() {
             tabuleiro[i][j] = '.'; // vazio
         }
     }
+
+    // ============================
+    // POSIÇÕES INICIAIS
+    // ============================
+    int bispoX = 7, bispoY = 0;   // Bispo começa em baixo à esquerda
+    int torreX = 0, torreY = 0;   // Torre começa no canto superior esquerdo
+    int rainhaX = 3, rainhaY = 7; // Rainha começa no meio da direita
