@@ -74,3 +74,21 @@ int main() {
     tabuleiro[bispoX][bispoY] = 'B';
     tabuleiro[torreX][torreY] = 'T';
     tabuleiro[rainhaX][rainhaY] = 'Q';
+
+    // ============================
+    // IMPRIMIR TABULEIRO FINAL
+    // ============================
+    printf("Tabuleiro Final (8x8):\n\n");
+    for (int i = 0; i < N; i++) {
+        for (int j = 0; j < N; j++) {
+            printf("%c ", tabuleiro[i][j]);
+        }
+        printf("\n");
+    }
+
+    printf("\nDesafio Xadrez MateCheck finalizado.\n");
+
+    return 0;
+}
+
+
