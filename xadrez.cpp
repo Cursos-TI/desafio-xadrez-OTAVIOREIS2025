@@ -52,3 +52,18 @@ int main() {
         j++;
     }
     printf("\n");
+
+    // ============================
+    // MOVIMENTAÇÃO DA RAINHA
+    // ============================
+    printf("Movimentacao da Rainha (8 casas para a esquerda):\n");
+    int k = 0;
+    do {
+        if (rainhaY > 0) { // move dentro do tabuleiro
+            rainhaY--;
+            printf("Esquerda\n");
+        }
+        k++;
+    } while (k < RAINHA_PASSOS && rainhaY > 0);
+
+    printf("\n");
